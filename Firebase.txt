@@ -1,0 +1,8 @@
+firebase init 
+select hosting
+build
+y
+npm run build
+firebase deploy
+make sure homepage is empty ot better there is no homepage in package.json
+

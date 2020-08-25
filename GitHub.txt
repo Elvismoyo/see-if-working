@@ -1,0 +1,33 @@
+git init
+git add README.md
+git commit -m "first commit"
+git init
+git add .
+git commit -m "latest commit"
+git remote add origin https://github.com/Elvismoyo/project-covid.git
+git push -u origin master
+//git remote set-url origin git@github.com:Elvismoyo/covid19-tracker.git
+--------------------------------------------
+git add . //addd all modified files ready to push
+git commit -m "latest commit" //commits and comments (-m is for message) all modified files by default -a included
+git push -u origin master  //simple push it to the git repository with the master origin
+---------------------------------------------
+Extra Git commands:
+git commit -a -m "commit for all" //It comments all files and commit it
+Deploy it:
+
+npm install gh-pages --save-dev
+"scripts": {
+  //...
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+ONLY ADD THIS WHEN DEPLOYING TO GITHUB:
+"homepage":"http://Elvismoyo.github.io/repositoryOfProjectName",
+npm run deploy
+nodemon [name].js //To start server and eveything works fine
+
+
+git add .
+git commit -m "last commit"
+git push -u origin master
